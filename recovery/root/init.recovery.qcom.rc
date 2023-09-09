@@ -41,13 +41,6 @@ service vendor.qti.vibrator /system/bin/vendor.qti.hardware.vibrator.service
     setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
     seclabel u:r:recovery:s0
 
-service variant-script /system/bin/variant-script.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0
-
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -66,7 +59,6 @@ on fs
     chmod 0666  /sys/bus/i2c/drivers/aw8624_haptic/2-005a/custom_wave
 
 on boot
-    start variant-script
     start overrideprops
     start health-hal-2-1
     start vendor.qti.vibrator
