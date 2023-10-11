@@ -41,7 +41,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
 	export ALLOW_MISSING_DEPENDENCIES=true
-	#export TARGET_DEVICE_ALT="sweetin"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	export OF_USE_MAGISKBOOT=1
