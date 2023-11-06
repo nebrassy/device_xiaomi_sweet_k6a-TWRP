@@ -63,7 +63,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_ENABLE_FS_COMPRESSION=1
 
 	# Use Magisk v26.3 for the magisk addon
-	export FOX_USE_SPECIFIC_MAGISK_ZIP=${GITHUB_WORKSPACE}/Magisk/Magisk-v26.3.zip
+	export FOX_USE_SPECIFIC_MAGISK_ZIP=${GITHUB_WORKSPACE}/Magisk/Magisk-v26.4.zip
 
 	# OTA
 	export OF_KEEP_DM_VERITY=1
@@ -80,7 +80,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_CLOCK_POS=1
 
 	# R11.1 Settings
-	export FOX_VERSION="R11.1_2"
+	export FOX_VERSION="R11.1_3"
 	export OF_MAINTAINER="008"
 
 	# let's see what are our build VARs
