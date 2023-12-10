@@ -11,3 +11,5 @@ ro.adb.secure=0
 fbe.metadata.wrappedkey=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
+#FUSE PASS
+persist.sys.fuse.passthrough.enable=true
