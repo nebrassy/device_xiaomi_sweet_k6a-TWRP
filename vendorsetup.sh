@@ -36,6 +36,7 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_GREEN_LED=0
+	export FOX_TARGET_DEVICES="sweet_k6a,sweet"
 	export FOX_ENABLE_APP_MANAGER=1
 	export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
 	export TW_DEFAULT_LANGUAGE="en"
@@ -63,7 +64,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_ENABLE_FS_COMPRESSION=1
 
 	# Use Magisk v26.3 for the magisk addon
-	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v26.4.zip
+	export FOX_USE_SPECIFIC_MAGISK_ZIP=$PWD/device/xiaomi/sweet_k6a/addon/Magisk-v26.4.zip
 
 	# OTA
 	export OF_KEEP_DM_VERITY=1
@@ -80,7 +81,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_CLOCK_POS=1
 
 	# R11.1 Settings
-	export FOX_VERSION="R11.1_3"
+	export FOX_VERSION="test"
 	export OF_MAINTAINER="008"
 
 	# let's see what are our build VARs
