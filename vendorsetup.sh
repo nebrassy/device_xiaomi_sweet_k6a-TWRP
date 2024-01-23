@@ -80,8 +80,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_HIDE_NOTCH=1
 	export OF_CLOCK_POS=1
 
-	# R11.1 Settings
-	export FOX_VERSION="test"
+	# Maintainer & Version settings
+	export FOX_VERSION="R11.1_4"
+	export OF_MAINTAINER_AVATAR="$PWD/device/xiaomi/sweet_k6a/addon/avatar.png"
 	export OF_MAINTAINER="008"
 
 	# let's see what are our build VARs
