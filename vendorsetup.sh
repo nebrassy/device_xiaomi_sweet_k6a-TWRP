@@ -37,6 +37,7 @@ fi
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_GREEN_LED=0
 	export FOX_TARGET_DEVICES="sweet_k6a,sweet"
+	export TARGET_DEVICE_ALT="sweet,sweet_k6a"
 	export FOX_ENABLE_APP_MANAGER=1
 	export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
 	export TW_DEFAULT_LANGUAGE="en"
@@ -82,7 +83,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# Maintainer & Version settings
 	export FOX_VERSION="R11.1_4"
-	export OF_MAINTAINER_AVATAR="$PWD/device/xiaomi/sweet_k6a/addon/avatar.png"
+	# export OF_MAINTAINER_AVATAR="$PWD/device/xiaomi/sweet_k6a/addon/avatar.png"
 	export OF_MAINTAINER="008"
 
 	# let's see what are our build VARs
