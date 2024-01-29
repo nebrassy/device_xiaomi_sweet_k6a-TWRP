@@ -32,6 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES+= ro.fastbootd.available=true
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Assert
+TARGET_OTA_ASSERT_DEVICE := sweet
 
 TARGET_COPY_OUT_VENDOR := vendor
 
