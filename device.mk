@@ -25,7 +25,9 @@ PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe \
     fastbootd \
-    android.hardware.fastboot@1.0-impl-mock
+    android.hardware.fastboot@1.0-impl-mock.recovery
+
+PRODUCT_PROPERTY_OVERRIDES+= ro.fastbootd.available=true
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -62,13 +64,12 @@ TW_INCLUDE_RESETPROP := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 1200
-TW_Y_OFFSET := 91
-TW_H_OFFSET := -91
+TW_MAX_BRIGHTNESS := 1200
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_APEX := true
-TW_FRAMERATE := 60
+TW_FRAMERATE := 120
 TW_INCLUDE_FASTBOOTD := true
 
 #Properties
